@@ -32,6 +32,8 @@ ImageViewer::ImageViewer()
     imageLabel->setSizePolicy(QSizePolicy::Ignored,
             QSizePolicy::Ignored);
     imageLabel->setScaledContents(true);
+    
+    menuBar()->setNativeMenuBar(false);
 
     scrollArea->setBackgroundRole(QPalette::Dark);
     scrollArea->setWidget(imageLabel);
